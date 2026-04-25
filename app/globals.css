@@ -161,3 +161,104 @@ body {
   padding: 2rem;
   width: 100%;
 }
+/* Table Editing Styles */
+.edit-zone {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid var(--glass-border);
+  padding: 0.5rem;
+  min-width: 150px;
+}
+
+.data-table th {
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  color: var(--text-main);
+  text-align: left;
+}
+
+.table-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.table-input:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.table-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.header-input {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.col-action-btn {
+  background: transparent;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.delete-col {
+  color: #f87171;
+}
+
+.delete-col:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.config-textarea {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 1rem;
+  resize: vertical;
+  transition: var(--transition);
+}
+
+.config-textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
+
